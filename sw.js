@@ -1,10 +1,10 @@
 const CACHE_NAME = 'tokofull-v1';
 const urlsToCache = [
-  '/tokofull/',
-  '/tokofull/index.html',
-  '/tokofull/manifest.json',
-  '/tokofull/icon-192.png',
-  '/tokofull/offline.html'
+  '/Tokofinalapp/',
+  '/Tokofinalapp/index.html',
+  '/Tokofinalapp/manifest.json',
+  '/Tokofinalapp/icon-192.png',
+  '/Tokofinalapp/offline.html'
 ];
 
 // Install
@@ -53,7 +53,7 @@ self.addEventListener('fetch', event => {
           .catch(() => {
             // Jika offline, tampilkan offline.html
             if (event.request.mode === 'navigate') {
-              return caches.match('/tokofull/offline.html');
+              return caches.match('/Tokofinalapp/offline.html');
             }
           });
       })
