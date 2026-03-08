@@ -10,7 +10,7 @@
     <meta name="author" content="Toko Full">
     
     <!-- PWA Manifest -->
-    <link rel="manifest" href="/tokofull/manifest.json">
+    <link rel="manifest" href="/Tokofinalapp/manifest.json">
     
     <!-- Theme Color -->
     <meta name="theme-color" content="#7c3aed">
@@ -19,17 +19,17 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <meta name="apple-mobile-web-app-title" content="Toko Full">
-    <link rel="apple-touch-icon" href="/tokofull/icon-192.png">
+    <link rel="apple-touch-icon" href="/Tokofinalapp/icon-192.png">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="/tokofull/icon-192.png">
+    <link rel="icon" type="image/png" href="/Tokofinalapp/icon-192.png">
     
     <!-- Facebook/Twitter Cards -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://pasar234.github.io/tokofull/">
+    <meta property="og:url" content="https://ponpasar56-creator.github.io/Tokofinalapp/">
     <meta property="og:title" content="Toko Full - Manajemen Toko">
     <meta property="og:description" content="Aplikasi manajemen stok untuk toko Anda">
-    <meta property="og:image" content="https://pasar234.github.io/tokofull/icon-192.png">
+    <meta property="og:image" content="https://ponpasar56-creator.github.io/Tokofinalapp/icon-192.png">
     
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Roboto, sans-serif; }
@@ -180,7 +180,7 @@
         window.addEventListener('offline', updateOnlineStatus);
         updateOnlineStatus();
 
-        // KEY STORAGE UNIK (beda dengan aplikasi 1)
+        // KEY STORAGE UNIK
         const STORAGE_KEY = 'tokofull_db';
         
         let db = JSON.parse(localStorage.getItem(STORAGE_KEY)) || [];
@@ -368,8 +368,8 @@
         // Registrasi Service Worker
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', function() {
-                navigator.serviceWorker.register('/tokofull/sw.js', {
-                    scope: '/tokofull/'
+                navigator.serviceWorker.register('/Tokofinalapp/sw.js', {
+                    scope: '/Tokofinalapp/'
                 }).then(function(registration) {
                     console.log('✅ Service Worker registered untuk TokoFull');
                 }).catch(function(err) {
